@@ -37,7 +37,6 @@ body {
 .sidebar {
   border-right: 1px solid #64748b;
   padding: 10px;
-  list-style-type: none;
   font-size: 18px;
 }
 
@@ -49,10 +48,30 @@ body {
   color: #1d4ed8;
 }
 
-.sidebar li.active {
+.sidebar-list {
+  list-style-type: none;
+}
+
+.sidebar-list li.active {
   background-color: #bae6fd;
 }
 
-.sidebar li:hover {
+.sidebar-list li:hover {
   background-color: #e0f2fe;
+}
+
+.content {
+  padding: 5px;
+}
+
+.content textarea {
+  border: none;
+  outline-offset: 0;
+  outline-width: 0;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100%;
+  background-color: #f8fafc;
+  resize: none;
 }
